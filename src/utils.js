@@ -15,7 +15,7 @@ async function getZkSyncProvider (zksync, networkName) {
       // eslint-disable-next-line new-cap
       ethersProvider = new ethers.getDefaultProvider(networkName)
     } catch (error) {
-      console.log('Could not connect to Rinkeby')
+      console.log('Could not connect to Goerli')
       console.log(error)
     }
     return ethersProvider
